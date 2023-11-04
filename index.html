@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Math Quiz</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <div class="container py-5">
+      <div class="card">
+        <!-- <img src="./images/image1.jpg" alt="calculator" srcset=""> -->
+        <div class="card-body">
+          <h1 class="card-title">Math Quiz</h1>
+          <div class="form-group" id="difficulty-select-container">
+            <label for="difficulty-select">Select Difficulty:</label>
+            <select id="difficulty-select" class="form-control">
+              <option value="easy">Easy</option>
+              <option value="medium">Medium</option>
+              <option value="hard">Hard</option>
+            </select>
+          </div>
+          <div id="question-container">
+            <p id="question" class="card-text"></p>
+            <input
+              type="number"
+              id="user-answer"
+              class="form-control"
+              placeholder="Your Answer"
+            />
+            <div id="btn-container" class="text-center py-2">
+              <button id="submit" class="btn btn-primary">Submit</button>
+              <button id="hint" class="btn btn-secondary">Hint</button>
+              <button id="next" class="btn btn-success">Next</button>
+            </div>
+          </div>
+          <div id="feedback" class="card-text"></div>
+          <div id="score" class="card-text">
+            Score: <span id="score-value">0</span>
+          </div>
+          <div id="timer" class="card-text">
+            Time Left: <span id="time-left">60</span> seconds
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
